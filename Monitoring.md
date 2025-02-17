@@ -1,35 +1,11 @@
-# 🚀 Anything Lab
-
-> **"궁금한 모든 것을 테스트할 수 있는 공간!"**  
-> 다양한 기능과 기술을 실험하고 테스트하고 여러 가지 시도를 해볼 수 있는 **Sandbox Repository**입니다.  
----
-
-## 🛠 개요
-`Anything Repository`는 특정 목적 없이 다양한 기술, 기능, API, 성능 등을 자유롭게 테스트하는 공간입니다.  
-필요에 따라 데이터베이스, 외부 API, 기타 기술들을 연동하여 실험할 수 있습니다.
-
-<details>
-    <summary>[Click] 📌 해당 Repository는 다음과 같은 테스트를 수행할 수 있습니다.</summary>
-
-    - Spring Boot 기반 API 개발 및 실험
-    - 다양한 데이터베이스(MySQL, PostgreSQL, Redis 등) 연결 테스트
-    - OpenAI API와 같은 AI 관련 기능 테스트
-    - GitHub Actions 및 CI/CD 파이프라인 실험
-    - 새로운 라이브러리 또는 프레임워크 도입 및 검증
-    - RESTful API & GraphQL API 테스트
-    - 성능 테스트 및 로깅/모니터링 실험
-    - 등등 그게 뭐든 어떤 것이든
-
-</details>
-
 # 👀 Grafana Monitoring
 ![스크린샷 2025-02-18 오전 1.09.07.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fpt%2F10w6628s0tg0xswnn1r970mm0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_c6kqNO%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-02-18%20%EC%98%A4%EC%A0%84%201.09.07.png)
 ## 1. Spring Boot 3x Statistics 대시보드
 Micrometer를 통해 수집된 Prometheus 메트릭을 활용하여, 애플리케이션의 전반적인 상태를 모니터링할 수 있도록 설계됨
 ### 주요 기능
-- 애플리케이션의 전반적인 상태 모니터링
-- HTTP 요청 및 응답 시간 분석
-- JVM 메트릭 모니터링
+- 애플리케이션의 전반적인 상태 모니터링 
+- HTTP 요청 및 응답 시간 분석 
+- JVM 메트릭 모니터링 
 - 대시보드 ID: `19004`
 ### 적용
 ![스크린샷 2025-02-18 오전 1.08.54.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fpt%2F10w6628s0tg0xswnn1r970mm0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_Cr8mws%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-02-18%20%EC%98%A4%EC%A0%84%201.08.54.png)
@@ -37,7 +13,7 @@ Micrometer를 통해 수집된 Prometheus 메트릭을 활용하여, 애플리�
 Spring Boot 애플리케이션의 HTTP 요청을 실시간으로 모니터링하며, Spring Boot Actuator를 통해 노출된 메트릭을 활용
 ### 주요 기능
 - HTTP 요청 상태 코드별 모니터링 (20x, 4x0k, 5xox 등)
-- 요청 처리 시간 분석
+- 요청 처리 시간 분석 
 - 대시보드 ID: `21308`
 ### 적용
 ![스크린샷 2025-02-18 오전 1.08.33.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fpt%2F10w6628s0tg0xswnn1r970mm0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_QdnHCc%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-02-18%20%EC%98%A4%EC%A0%84%201.08.33.png)
@@ -45,8 +21,8 @@ Spring Boot 애플리케이션의 HTTP 요청을 실시간으로 모니터링하
 Java Virtual Machine (JVM)의 성능 메트릭을 모니터링하기 위해 설계되었으 며, Prometheus Operator와 함께 사용됩니다.
 ### 주요 기능:
 - JVM 메모리 사용량 모니터링
-- Garbage Collection(GC) 활동 추적
-- 스레드 및 클래스 로딩 정보 제공
+- Garbage Collection(GC) 활동 추적 
+- 스레드 및 클래스 로딩 정보 제공 
 - 대시보드 ID: `22108`
 ### 적용
 ![스크린샷 2025-02-18 오전 1.08.17.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fpt%2F10w6628s0tg0xswnn1r970mm0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_hPT4Is%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-02-18%20%EC%98%A4%EC%A0%84%201.08.17.png)
@@ -60,7 +36,7 @@ Java Virtual Machine (JVM)의 성능 메트릭을 모니터링하기 위해 설�
   docker compose up -d --build
   ```
 # 추후 보안을 위한 필수 적용 리스트
-## Spring Boot의 Spring Security
+## Spring Boot의 Spring Security 
 - actuator/prometheus 엔드포인트 보호
 - hasRole적용 필요
 - 접속 제한 IP리스트 적용 필요
@@ -69,3 +45,4 @@ Java Virtual Machine (JVM)의 성능 메트릭을 모니터링하기 위해 설�
 - Prometheus 웹 UI(http://localhost:9090/graph 등)에 인증을 추가하거나 방화벽을 설정.
 ## Docker Network 내부에서만 접근 가능하도록 변경
 - Prometheus와 Spring Boot를 같은 Docker 네트워크 안에 두고, 내부 네트워크에서만 통신하도록 변경.
+
