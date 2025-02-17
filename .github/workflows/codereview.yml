@@ -29,4 +29,14 @@ jobs:
             - 불필요한 코드 반복 여부
           COMMENT_MODE: true  # PR의 특정 코드 라인에 직접 리뷰 코멘트 작성
           FILE_EXTENSIONS: .java,.kt,.js,.ts,.py,.go,.rb,.cs,.cpp,.h
-          EXCLUDED_FILES: "test/**, docs/**, **/*.md, **/*.json, **/*.lock, **/*.config, **/node_modules/**"
+          EXCLUDED_FILES: "test/**, 
+                           docs/**, 
+                           images/**, 
+                           **/*.md, 
+                           **/*.json, 
+                           **/*.lock, 
+                           **/*.config, 
+                           **/node_modules/**, 
+                           **/*.yml, 
+                           **/build.gradle.kts,
+                           **/*.md"
