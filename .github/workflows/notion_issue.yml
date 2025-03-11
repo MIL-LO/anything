@@ -5,7 +5,7 @@ on:
     types: [opened, edited, closed]
 
 jobs:
-  노션_이슈_업데이트:
+  notion_issue_update:
     runs-on: ubuntu-latest
     steps:
       - name: Notion에 Issue 추가

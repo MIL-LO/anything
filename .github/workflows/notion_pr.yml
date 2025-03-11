@@ -5,7 +5,7 @@ on:
     types: [opened, closed, merged]
 
 jobs:
-  노션_PR_업데이트:
+  notion_pr_update:
     runs-on: ubuntu-latest
     steps:
       - name: Notion에 PR 정보 업데이트
